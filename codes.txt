@@ -1,0 +1,31 @@
+NOTE: ALL THE USAGE OF TOOLS MUST BE DONE ONLY WITHIN THE ENVIRONMENT. THESE WILL NOT WORK OUTSIDE THE ENVIRONMENT.
+
+To upgrade the system - 
+  sudo apt update
+  sudo apt upgrade
+
+To install miniconda - 
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  bash Miniconda3-latest-Linux-x86_64.sh
+
+
+configurate (was needed for me to install as i as not able to install the tools directly)
+  conda config --add channels defaults
+  conda config --add channels bioconda
+  conda config --add channels conda-forge
+  conda config --set channel_priority strict
+
+
+Create a conda environment
+  conda create -n rnaseq -y python=3.10
+  conda activate rnaseq
+
+Install fastqc and multiqc
+  conda install -c conda-forge -c bioconda fastqc multiqc
+
+
+Check the installed versions
+  fastqc --version
+  multiqc --version
+
+  
