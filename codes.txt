@@ -42,4 +42,6 @@ Installation of STAR
   conda install -c bioconda star
   STAR --version
 
-
+Installation of Feature Counts
+  conda install -c conda-forge subread
+  featureCounts -v
