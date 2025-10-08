@@ -28,4 +28,18 @@ Check the installed versions
   fastqc --version
   multiqc --version
 
-  
+
+Installing Trim Galore
+  wget https://github.com/FelixKrug=eger/TrimGalore/archive/refs/tags/0.6.10.zip
+  unzip 0.6.10.zip
+  cd TrimGalore-0.6.10
+  chmod +x trim_galore
+  sudo ln -s $(pwd)/trim_galore /usr/local/bin/trim_galore
+  trim_galore --version
+
+Installation of STAR
+
+  conda install -c bioconda star
+  STAR --version
+
+
