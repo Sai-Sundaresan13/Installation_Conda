@@ -30,7 +30,7 @@ Check the installed versions
 
 
 Installing Trim Galore
-  wget https://github.com/FelixKrugeger/TrimGalore/archive/refs/tags/0.6.10.zip
+  wget https://github.com/FelixKrueger/TrimGalore/archive/refs/tags/0.6.10.zip
   unzip 0.6.10.zip
   cd TrimGalore-0.6.10
   chmod +x trim_galore
